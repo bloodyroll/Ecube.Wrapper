@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA7B5B2E-FA23-43A4-80CE-0FCFC811F637}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ecube.Wrapper</RootNamespace>
+    <AssemblyName>Ecube.Wrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\EcubeApplication.cs" />
+    <Compile Include="Attribute\EcubeAttribute.cs" />
+    <Compile Include="BinData\EcubeBinData.cs" />
+    <Compile Include="Board\EcubeBoard.cs" />
+    <Compile Include="Bundle\EcubeBundle.cs" />
+    <Compile Include="Component\EcubeComponent.cs" />
+    <Compile Include="ConnectionLine\EcubeConnectionLine.cs" />
+    <Compile Include="Connection\EcubeConnection.cs" />
+    <Compile Include="DbeApplication\EcubeDbeApplication.cs" />
+    <Compile Include="DbeBridge\EcubeDbeBridge.cs" />
+    <Compile Include="Dimension\EcubeDimension.cs" />
+    <Compile Include="DllInterface\EcubeDllInterface.cs" />
+    <Compile Include="ExternalDocument\EcubeExternalDocument.cs" />
+    <Compile Include="Field\EcubeField.cs" />
+    <Compile Include="FunctionalPort\EcubeFunctionalPort.cs" />
+    <Compile Include="FunctionalUnit\EcubeFunctionalUnit.cs" />
+    <Compile Include="Graph\EcubeGraph.cs" />
+    <Compile Include="Group\EcubeGroup.cs" />
+    <Compile Include="Job\EcubeJob.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
