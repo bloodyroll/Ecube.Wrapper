@@ -39,28 +39,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\EcubeApplication.cs" />
-    <Compile Include="Attribute\EcubeAttribute.cs" />
-    <Compile Include="BinData\EcubeBinData.cs" />
-    <Compile Include="Board\EcubeBoard.cs" />
-    <Compile Include="Bundle\EcubeBundle.cs" />
-    <Compile Include="Component\EcubeComponent.cs" />
-    <Compile Include="ConnectionLine\EcubeConnectionLine.cs" />
-    <Compile Include="Connection\EcubeConnection.cs" />
-    <Compile Include="DbeApplication\EcubeDbeApplication.cs" />
-    <Compile Include="DbeBridge\EcubeDbeBridge.cs" />
-    <Compile Include="Dimension\EcubeDimension.cs" />
-    <Compile Include="DllInterface\EcubeDllInterface.cs" />
-    <Compile Include="ExternalDocument\EcubeExternalDocument.cs" />
-    <Compile Include="Field\EcubeField.cs" />
-    <Compile Include="FunctionalPort\EcubeFunctionalPort.cs" />
-    <Compile Include="FunctionalUnit\EcubeFunctionalUnit.cs" />
-    <Compile Include="Graph\EcubeGraph.cs" />
-    <Compile Include="Group\EcubeGroup.cs" />
-    <Compile Include="Job\EcubeJob.cs" />
+    <Compile Include="Entities\Application\EcubeApplication.cs" />
+    <Compile Include="Entities\Application\EcubeApplicationBase.cs" />
+    <Compile Include="Entities\Application\EcubeApplication0850.cs" />
+    <Compile Include="Entities\Attribute\EcubeAttribute.cs" />
+    <Compile Include="Entities\BinData\EcubeBinData.cs" />
+    <Compile Include="Entities\Board\EcubeBoard.cs" />
+    <Compile Include="Entities\Bundle\EcubeBundle.cs" />
+    <Compile Include="Entities\Component\EcubeComponent.cs" />
+    <Compile Include="Entities\ConnectionLine\EcubeConnectionLine.cs" />
+    <Compile Include="Entities\Connection\EcubeConnection.cs" />
+    <Compile Include="Entities\Database\EcubeDatabase.cs" />
+    <Compile Include="Entities\DbeApplication\EcubeDbeApplication.cs" />
+    <Compile Include="Entities\DbeBridge\EcubeDbeBridge.cs" />
+    <Compile Include="Entities\Device\EcubeDevice.cs" />
+    <Compile Include="Entities\Dimension\EcubeDimension.cs" />
+    <Compile Include="Entities\DllInterface\EcubeDllInterface.cs" />
+    <Compile Include="Entities\EcubeObjectBase.cs" />
+    <Compile Include="Entities\Job\EcubeJobBase.cs" />
+    <Compile Include="Entities\TextOwner\EcubeTextOwnerBase.cs" />
+    <Compile Include="Entities\TextOwner\EcubeTextOwnerBase_Evolution.cs" />
+    <Compile Include="Entities\Tree\EcubeTree.cs" />
+    <Compile Include="Entities\ExternalDocument\EcubeExternalDocument.cs" />
+    <Compile Include="Entities\Field\EcubeField.cs" />
+    <Compile Include="Entities\FunctionalPort\EcubeFunctionalPort.cs" />
+    <Compile Include="Entities\FunctionalUnit\EcubeFunctionalUnit.cs" />
+    <Compile Include="Entities\Graph\EcubeGraph.cs" />
+    <Compile Include="Entities\Group\EcubeGroup.cs" />
+    <Compile Include="Entities\Job\EcubeJob.cs" />
+    <Compile Include="Entities\Layer\EcubeLayer.cs" />
+    <Compile Include="Entities\ModulePort\EcubeModulePort.cs" />
+    <Compile Include="Entities\Module\EcubeModule.cs" />
+    <Compile Include="Entities\NetSegment\EcubeNetSegment.cs" />
+    <Compile Include="Entities\Net\EcubeNet.cs" />
+    <Compile Include="Entities\Option\EcubeOption.cs" />
+    <Compile Include="Entities\Outline\EcubeOutline.cs" />
+    <Compile Include="Entities\Pin\EcubePin.cs" />
+    <Compile Include="Entities\Sheet\EcubeSheet.cs" />
+    <Compile Include="Entities\SignalClass\EcubeSignalClass.cs" />
+    <Compile Include="Entities\Signal\EcubeSignal.cs" />
+    <Compile Include="Entities\Slot\EcubeSlot.cs" />
+    <Compile Include="Entities\StructureNode\EcubeStructureNode.cs" />
+    <Compile Include="Entities\Supply\EcubeSupply.cs" />
+    <Compile Include="Entities\Symbol\EcubeSymbol.cs" />
+    <Compile Include="Entities\Testpoint\EcubeTestpoint.cs" />
+    <Compile Include="Entities\Text\EcubeText.cs" />
+    <Compile Include="Entities\UserMenuItem\EcubeUserMenuItem.cs" />
+    <Compile Include="Entities\Variant\EcubeVariant.cs" />
+    <Compile Include="Entities\Wespe\EcubeWespe.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
